@@ -1,0 +1,17 @@
+@CHARSET "ISO-8859-1";
+
+html{height: 100%; width: 100%}
+
+
+h1{text-align:center;}
+
+#inicio{text-align:center; margin-top: 2%; background-color: inherit; border: none;border-radius: inherit;box-shadow: inherit;}
+div{text-align: center; width: 60%; background-color: lightyellow; margin:auto; margin-top: 2%; border-radius: 10px;border: 1px solid black;box-shadow: 10px 10px 5px #888888; padding: 1%;}	
+
+a{text-align: center;margin: auto;}
+
+table{text-align: center; margin:auto;}
+
+table tr td{margin-right: 1%}
+
+#oferta{color:red; font-weight: bold;font-size: large;}
