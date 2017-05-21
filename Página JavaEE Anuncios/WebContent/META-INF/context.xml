@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	
+	<Resource name="jdbc/Sim_Ex_2_DB" auth="Container"
+		type="javax.sql.DataSource" 
+		username="root" 
+		password=""
+		driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/simulacion_examen_2"
+		maxActive="10" maxIdle="4" />
+
+</Context>
