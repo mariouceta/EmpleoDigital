@@ -1,0 +1,128 @@
+<!--CAMBIOS RESUMIDOS-->
+<!--
+Se han cambiado los fondos del slider.
+Los colores de efecto en el nav.
+Las imagenes y su tamaño, y los colores de la parte bajo el slider.
+Se ha creado la clase logoLuxe para cambiar el icono en la cabecera
+Cambiado el favicon.
+Se ha cambiado el texto del footer.
+
+Se ha insertado una imágen extra en el slider y en las categorías, cambiando el css grid.css para que el contenedor de las imagenes sea más grande y quepan.
+
+
+En la carpeta mis_js está el javascript propio que se ha utilizado.
+
+La página principal es index.html, que sólo llevará a otra página en la sección "Automóviles", porque es la única que me ha dado tiempo a hacer.
+
+Dentro de Automóviles, se podrá navegar entre las diferentes subcategorías con un slider, y seleccionar la imagen del producto que se desea comprar o reservar.
+En Reservar aparece otra ventana modal con un calendario y en Comprar el precio del producto y un botón para pasar a la pasarela de pago. 
+
+
+-->
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+    <title>Luxe</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your keywords">
+    <meta name="author" content="Mario Uceta García">
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="icon" href="mis_img/logo_luxe.png" type="image/x-icon/png">
+    <link rel="shortcut icon" href="mis_img/logo_luxe.png" type="image/x-icon/png" />
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.1.1.js"></script>
+    <script src="js/bgstretcher.js"></script>
+    <script type="text/javascript" src="mis_js/script.js"></script>
+    <script>
+	$(function(){
+      //  Initialize Backgound Stretcher
+      $('BODY').bgStretcher({
+        images: ['mis_img/embarcaciones.jpg','mis_img/automoviles.jpg','mis_img/moda.jpg', 'mis_img/cuidado_personal.jpg'], 
+		imageWidth: 1600, 
+		imageHeight: 964, 
+		resizeProportionally:true,
+			slideDirection: 'N',
+			slideShowSpeed: 1000,
+			transitionEffect: 'fade',
+			sequenceMode: 'normal',		
+			pagination: '#nav'
+	
+       });	
+    });
+    </script>
+
+ </head>
+ <body>
+<div class="extra-block1"> 
+      <!--==============================row-top=================================-->
+  <div class="row-top">
+    <div class="main">
+       <ul class="list-soc">
+        <li><a href="#"><img alt="" src="images/soc-icon1.png"></a></li>
+        <li><a href="#"><img alt="" src="images/soc-icon2.png"></a></li>
+      </ul>
+     </div>
+  </div>
+      
+      <!--==============================header=================================-->
+      
+      <header>
+    <div class="row-nav">
+          <div class="main">
+        <h1 class="logo"><a href="index.html"><img id="logoLuxe" src="mis_img/logo_luxe.png"></a></h1>
+        <nav>
+           <ul class="menu">
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Galería</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+       </nav>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </header>
+ </div>
+<div class="block">
+      <div class="nav-buttons">
+    <div id="nav">&nbsp;</div>
+  </div>
+      <div class="row-1">
+    <div class="container_12">
+          <div class="wrapper">
+        <article class="grid_4">
+              <figure class="box-1"><img id="imgLux" src="mis_img/embarcaciones.jpg" alt="" />
+            <figcaption>Personal luxury<a href="#"></a></figcaption>
+          </figure>
+            </article>
+        <article class="grid_4">
+              <figure class="box-1"><img id="imgLux" src="mis_img/automoviles.jpg" alt="" />
+            <figcaption>Vehículos<a href="vehiculos.html"></a></figcaption>
+          </figure>
+            </article>
+        <article class="grid_4">
+             <figure class="box-1"><img id="imgLux" src="mis_img/moda.jpg" alt="" />
+            <figcaption>Varios<a href="#"></a></figcaption>
+          </figure>
+            </article>
+          <article class="grid_4">
+             <figure class="box-1"><img id="imgLux" src="mis_img/cuidado_personal.jpg" alt="" />
+            <figcaption>Cuidado personal<a href="#"></a></figcaption>
+          </figure>
+            </article>
+      </div>
+     </div>
+  </div>
+
+      
+      <!--==============================footer================================-->
+   <footer>
+    <div class="main aligncenter">
+        <div class="privacy">Luxe   &copy; 2017 <span>|</span> <a href="#" rel="nofollow">Privacy Policy</a> <span>|</span> <strong>Examen realizado por: Mario Uceta García</a></strong> </div>
+        </div>
+  </footer>
+ </div>
+</body>
+</html>
